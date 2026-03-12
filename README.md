@@ -1,4 +1,4 @@
-# 🍽️ Abstract Factory - Sazon Tec Restaurante 🍽️
+# 🍽️ Abstract Factory - Sazon ITT Restaurante 🍽️
 ### Elaborado por:
 
 - Mendoza Suarez Ivan Gustavo
