@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Sabor Tec - Restaurante del Tecnológico de Tijuana</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Sazón ITT</h1>
+<p>Restaurante del Instituto Tecnológico de Tijuana</p>
+
+</header>
+
+
+<div class="selector">
+
+<select id="restaurante">
+
+<option value="chino">Restaurante Chino</option>
+<option value="japones">Restaurante Japonés</option>
+<option value="mexicano">Restaurante Mexicano</option>
+<option value="italiano">Restaurante Italiano</option>
+<option value="americano">Restaurante Americano</option>
+
+</select>
+
+<button onclick="crearCliente()">Generar Menú</button>
+
+</div>
+
+
+<div class="menu-container">
+
+
+<div class="card">
+
+<img id="imgPlato" alt="Plato" width="250">
+
+<h3 id="plato">Plato</h3>
+
+<p id="precioPlato"></p>
+
+<p id="descPlato"></p>
+
+<button onclick="agregarCarrito('plato')">Agregar al carrito</button>
+
+</div>
+
+
+<div class="card">
+
+<img id="imgBebida" alt="Bebida" width="250">
+
+<h3 id="bebida">Bebida</h3>
+
+<p id="precioBebida"></p>
+
+<p id="descBebida"></p>
+
+<button onclick="agregarCarrito('bebida')">Agregar al carrito</button>
+
+</div>
+
+
+<div class="card">
+
+<img id="imgPostre" alt="Postre" width="250">
+
+<h3 id="postre">Postre</h3>
+
+<p id="precioPostre"></p>
+
+<p id="descPostre"></p>
+
+<button onclick="agregarCarrito('postre')">Agregar al carrito</button>
+
+</div>
+
+
+</div>
+
+
+<h2>Carrito de compras</h2>
+
+<button onclick="comprar()">Comprar</button>
+
+<div class="carrito">
+
+<ul id="listaCarrito"></ul>
+
+<p id="total">Total: $0 MXN</p>
+
+</div>
+
+
+<h2 class="titulo-info">Información del Restaurante</h2>
+
+<div class="info-restaurante">
+
+<p><strong>Dirección:</strong> 
+Calzada del Tecnológico S/N, Fracc. Tomás Aquino, Tijuana BC
+</p>
+
+<p><strong>Teléfono:</strong> (664) 607-8400</p>
+
+<p><strong>Horario:</strong> 7:00 AM - 10:00 PM</p>
+
+<p>Calificación: ⭐⭐⭐⭐⭐</p>
+
+<iframe
+width="100%"
+height="300"
+src="https://maps.google.com/maps?q=Instituto%20Tecnologico%20de%20Tijuana&t=&z=15&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+
+<div class="redes">
+
+<h3>Síguenos</h3>
+
+<a href="#">Facebook</a>
+<a href="#">Instagram</a>
+<a href="#">TikTok</a>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+<!-- Modal de ticket -->
+<div id="modalTicket" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="cerrarModal()">&times;</span>
+    <h2></h2>
+    <pre id="contenidoTicket"></pre>
+  </div>
+</div>
+
+</html>
