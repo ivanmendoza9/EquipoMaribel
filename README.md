@@ -13,6 +13,7 @@ El sistema simula distintos tipos de restaurantes como **chino, japonés, mexica
 
 Para el desarrollo de este proyecto se utilizó **HTML para la estructura de la interfaz**, **CSS para el diseño visual** y **JavaScript para la lógica del programa**.
 
+
 ---
 
 ## 🧠 ¿Qué es Abstract Factory?
